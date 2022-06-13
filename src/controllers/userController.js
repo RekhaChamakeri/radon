@@ -31,17 +31,15 @@ const createOrder= async function (req, res) {
     res.send({msg: savedData})
 }
 
+//............................................................................06...................................................................
 
-
-
-
-
-
-
-
-
-
-
+// const updateAmount= async function (req, res){
+//     let hdata=req.headers.isfreeappuser
+//     if(hdata==true){
+//          let updateAmt = await orderModel.updateMany( {$set:{amount: 0}} )
+//          res.send({msg:updateAmt})
+//     }
+//     }
 
 
 
@@ -53,3 +51,4 @@ const createOrder= async function (req, res) {
 module.exports.createProduct= createProduct
 module.exports.createUser= createUser
 module.exports.createOrder= createOrder
+//module.exports.updateAmount= updateAmount
