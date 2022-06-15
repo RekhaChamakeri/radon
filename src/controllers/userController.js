@@ -4,8 +4,6 @@ const userModel = require("../models/userModel");
 const createUser = async function (req, xyz) {
   let data = req.body;
   let savedData = await userModel.create(data);
-  // data.anything="something"
-  // console.log(req.newAttribute);
   xyz.send({ msg: savedData });
 };
 
